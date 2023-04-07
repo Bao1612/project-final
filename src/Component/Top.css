@@ -19,3 +19,11 @@
 .search:focus ~ button {
     display:none;
 }
+
+.login-btn {
+    float: left;
+}
+
+#navbarScroll {
+    width: 100%;
+}

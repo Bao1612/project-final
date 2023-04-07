@@ -20,7 +20,7 @@ function Top(props) {
           <Navbar.Collapse id="navbarScroll">
             <Nav className="m-2">
               <Link
-                className="m-2"
+                className="m-2 bgc"
                 to="/Phimle"
                 style={{
                   color: "white",
@@ -71,6 +71,17 @@ function Top(props) {
                 </div>
               </div>
             </div>
+            <Link
+                className="m-2 login-btn"
+                to="/Login"
+                style={{
+                  color: "white",
+                  textDecoration: "none",
+                  fontWeight: "500",
+                }}
+              >
+                Đăng nhập
+              </Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>
