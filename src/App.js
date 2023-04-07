@@ -1,12 +1,13 @@
 import './components/Footer.css'
 import React from 'react';
 import Footer from './components/Footer';
-import { BrowserRouter } from 'react-router-dom';
+import Trending from './components/Trending2.0';
 
 function App() {
   return (
     <div>
-      <Footer/>
+      <Trending/>
+        <Footer/>
     </div>
   );
 }
