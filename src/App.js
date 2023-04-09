@@ -1,7 +1,7 @@
 import './components/Footer.css'
 import React from 'react';
 import Footer from './components/Footer';
-import Trending from './components/Trending2.0';
+import Trending from './Pages/Trending2.0';
 
 function App() {
   return (

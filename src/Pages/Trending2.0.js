@@ -1,7 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import MovieCard from './MovieCard'
+import MovieCard from '../Pages/MovieCard'
+import '../Pages/MovieCard.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Trending() {
 
@@ -12,10 +14,14 @@ function Trending() {
     }).catch(err=>{console.log(err)})
   },[])
 
-return <div className='flex pb-5 px-5 overflow-x-auto'>
-  {movies.map((movie,index)=> {
-        return <MovieCard key={index} {...movie} />
-      })}
+return <div>
+  <div>
+      <div className='grid'> 
+          {movies.map((movie,index)=> {
+          return <MovieCard key={index} {...movie} />
+        })}
+        </div>
+      </div>
   </div>
 }
 
