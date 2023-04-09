@@ -6,6 +6,7 @@ import Phimbo from "./Pages/Phimbo";
 import Phimle from "./Pages/Phimle";
 import Phimhot from "./Pages/Phimhot";
 import Phimmoi from "./Pages/Phimmoi";
+import Login from "./Pages/Login";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/phimhot" element={<Phimhot />} />
         <Route path="/phimle" element={<Phimle />} />
         <Route path="/phimmoi" element={<Phimmoi />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
     </div>
   );
