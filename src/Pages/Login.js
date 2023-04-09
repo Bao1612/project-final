@@ -1,6 +1,7 @@
 import "./Login.css"
 import { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Register from "./Register";
 
@@ -18,14 +19,7 @@ function Login() {
     }
 
     const handleLogin = () => {
-        axios({
-            method: 'post',
-            url: 'http://125.212.249.230:3001/api/v1/auth/login',
-            data: {
-                "username": email,
-                "password": password
-            }
-        });
+        
     }
 
     return (
@@ -39,10 +33,17 @@ function Login() {
                         <div className="remember"><input type="checkbox" /> Ghi nhớ</div>
                         <button type="submit" className="login-btn">Đăng nhập</button>
                         <div className="Register">
-                            <Routes>
-                                <Route path="./register" element={<Register/>}/>
-                                <div className="register-btn">Đăng ký</div>
-                            </Routes>
+
+                                <Link
+                                style={{
+                                    textDecoration: "none",
+                                    color: "white"
+                                }}
+                                to="/register"
+                                >
+                                    <div className="register-btn">Đăng ký</div>
+                                </Link>
+                                
                         </div>
                     </div>
                 </div>

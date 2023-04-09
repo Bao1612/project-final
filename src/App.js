@@ -7,6 +7,7 @@ import Phimle from "./Pages/Phimle";
 import Phimhot from "./Pages/Phimhot";
 import Phimmoi from "./Pages/Phimmoi";
 import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/phimle" element={<Phimle />} />
         <Route path="/phimmoi" element={<Phimmoi />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<Register/>}/>
       </Routes>
     </div>
   );
